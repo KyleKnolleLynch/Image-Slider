@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #455;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  left: -25rem;
+  top: 75%;
+  width: 30rem;
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px #455 solid;
+  border-radius: 5px;
+  color: #333;
+  padding: 1.2rem;
+  margin-left: 1rem;
+}
+
+.slide .content h1 {
+  margin-bottom: 10px;
+}
+
+.slide.current .content {
+  transform: translateX(25rem);
+  transition: all 1s ease-in-out 0.5s;
+  opacity: 1;
+}
+
+.buttons button {
+  font-size: 1.5rem;
+  color: #fff;
+  background: transparent;
+  border: 2px #fff solid;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  padding: 0.5rem;
+}
+
+.buttons button:hover {
+  opacity: 0.9;
+  background: #fff;
+  color: #455;
+}
+
+button#next {
+  position: absolute;
+  top: 45%;
+  right: 1rem;
+}
+
+button#prev {
+  position: absolute;
+  top: 45%;
+  left: 1rem;
+}
+
+@media (max-width: 500px) {
+  .slide .content {
+    width: 100%;
+    top: unset;
+    bottom: -14rem;
+    left: 0;
+    margin-left: 0;
+  }
+
+  .slide.current .content {
+    transform: translateY(-14rem);
+  }
+}
+
+.slide:first-child {
+  background: url("images/dark.jpg") no-repeat 75% 30% / cover;
+}
+
+.slide:nth-child(2) {
+  background: url("images/ballet.jpg") no-repeat center top/cover;
+}
+
+.slide:nth-child(3) {
+  background: url("images/wall.jpg") no-repeat 25% top/cover;
+}
+
+.slide:nth-child(4) {
+  background: url("images/dancehall.jpg") no-repeat center top/cover;
+}
+
+.slide:nth-child(5) {
+  background: url("images/sil.jpg") no-repeat center 35% / cover;
+}
+
+.slide:nth-child(6) {
+  background: url("images/native.jpg") no-repeat center top/cover;
+}
+
+.slide:nth-child(7) {
+  background: url("images/temple.jpg") no-repeat center top/cover;
+}
