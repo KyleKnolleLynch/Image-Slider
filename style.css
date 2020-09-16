@@ -101,29 +101,29 @@ button#prev {
 }
 
 .slide:first-child {
-  background: url("images/dark.jpg") no-repeat 75% 30% / cover;
+  background: url("images/dark.webp") no-repeat 75% 30% / cover;
 }
 
 .slide:nth-child(2) {
-  background: url("images/ballet.jpg") no-repeat center top/cover;
+  background: url("images/ballet.webp") no-repeat center top/cover;
 }
 
 .slide:nth-child(3) {
-  background: url("images/wall.jpg") no-repeat 25% top/cover;
+  background: url("images/wall.webp") no-repeat 25% top/cover;
 }
 
 .slide:nth-child(4) {
-  background: url("images/dancehall.jpg") no-repeat center top/cover;
+  background: url("images/dancehall.webp") no-repeat center top/cover;
 }
 
 .slide:nth-child(5) {
-  background: url("images/sil.jpg") no-repeat center 35% / cover;
+  background: url("images/sil.webp") no-repeat center 35% / cover;
 }
 
 .slide:nth-child(6) {
-  background: url("images/native.jpg") no-repeat center top/cover;
+  background: url("images/native.webp") no-repeat center top/cover;
 }
 
 .slide:nth-child(7) {
-  background: url("images/temple.jpg") no-repeat center top/cover;
+  background: url("images/temple.webp") no-repeat center top/cover;
 }
